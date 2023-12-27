@@ -3,7 +3,7 @@ import { create } from "zustand";
 export type ILog = {
   note: string;
   hour: number;
-  date: Date;
+  date: Date | string;
 };
 
 export interface LogState {

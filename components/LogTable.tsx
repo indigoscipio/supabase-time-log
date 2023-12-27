@@ -29,10 +29,10 @@ export default function LogTable({}: Props) {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {Object.keys(logs).map((key) => {
+        {Object.keys(logs).map((key, index) => {
           const log = logs[key];
           return (
-            <TableRow>
+            <TableRow key={index}>
               <TableCell>{log.date.toDateString()}</TableCell>
               <TableCell>{log.hour}</TableCell>
               <TableCell>

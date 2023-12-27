@@ -3,7 +3,7 @@ import { ILog, useLogStore } from "@/store/store";
 import React, { useRef } from "react";
 
 type Props = {
-  logs: ILog;
+  logs: ILog[];
 };
 
 export default function InitLog({ logs }: Props) {
