@@ -47,7 +47,7 @@ export default function CreateLog({}: Props) {
       if (data) {
         toast({
           title: "Log created successfullly!",
-          description: `${log.hour} hours on ${log.date.toDateString()}`,
+          description: `${log.hour} hours logged on ${log.date}`,
         });
         setLogs(log, dayjs(log.date).format("YYYY-MM-DD"));
       }
