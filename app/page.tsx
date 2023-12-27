@@ -19,9 +19,9 @@ export default async function Home() {
     .select("*")
     .order("date", { ascending: true });
 
-  if (supabaseLogs) {
-    console.log(supabaseLogs);
-  }
+  // if (supabaseLogs) {
+  //   console.log(supabaseLogs);
+  // }
 
   return (
     <main className="py-12">
